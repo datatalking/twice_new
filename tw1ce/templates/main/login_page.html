@@ -1,0 +1,57 @@
+{% extends 'layouts/base_layout.html' %}
+
+{% block content %}
+    <div class="container" >
+        <div class="row justify-content-center align-items-center mt-5" style="height:60vh!important">
+            <div class="col-md-8">
+                <div>
+                    <h2>Login Page</h2>
+                </div>
+                <div>
+                    <div>
+                        <h5>Login to access your account</h5>
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <form method="post" autocomplete="off" action="" class="">
+                            {% csrf_token %}
+                        <div class="row align-items-center">
+                            <div class="col-2">
+                                <label for="username" class="float-end">Username</label>
+                            </div>
+                            <div class="col-5">
+                                <input type="text" placeholder="email@example.com" class="form-control" id="username"
+                                       name="username" autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center mt-3" >
+                            <div class="col-2">
+                                <label for="pass" class="float-end">Password</label>
+                            </div>
+                            <div class="col-5">
+                                <input type="password" placeholder="******" class="form-control" id="pass"
+                                       name="pass" autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-2">
+
+                            </div>
+                            <div class="col-5">
+                                <button class="btn btn-dark" style="background: #0277bd; border: none">Submit</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,152 @@
+{% extends 'layouts/base_layout.html' %}
+
+{% block content %}
+    <div class="container" >
+        <div class="row justify-content-center align-items-center mt-5" >
+            <div class="col-md-8">
+                <div>
+                    <h2>SignUp Page</h2>
+                </div>
+                <div>
+                    <div>
+                        <h5>Account creation</h5>
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <form method="post" autocomplete="off" action="" class="">
+                            {% csrf_token %}
+                        <div class="row align-items-center">
+                            <div class="col-4">
+                                <label for="username" class="">Legal company name:</label>
+                            </div>
+                            <div class="col-5">
+                                <input type="text" placeholder="AGOU Holding" class="form-control" id="username"
+                                       name="username" autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center mt-2">
+                            <div class="col-4">
+                                <label for="username" class="">Nation/State of registration:</label>
+                            </div>
+                            <div class="col-5">
+                                <select name="" id="" class="form-select">
+                                    <option value="">Satate 1</option>
+                                    <option value="">Satate 2</option>
+                                    <option value="">Satate 3</option>
+                                    <option value="">Satate 4</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center mt-2">
+                            <div class="col-4">
+                                <label for="username" class="">EIN:</label>
+                            </div>
+                            <div class="col-5">
+                                <input type="text" placeholder="22765528" class="form-control" id="username"
+                                       name="username" autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center mt-2">
+                            <div class="col-4">
+                                <label for="username" class="">Admin contact name:</label>
+                            </div>
+                            <div class="col-5">
+                                <input type="text" placeholder="Kodjo koffi" class="form-control" id="username"
+                                       name="username" autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center mt-2">
+                            <div class="col-4">
+                                <label for="username" class="">Admin contact email:</label>
+                            </div>
+                            <div class="col-5">
+                                <input type="email" placeholder="admin@admin.com" class="form-control" id="username"
+                                       name="username" autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center mt-2">
+                            <div class="col-4">
+                                <label for="username" class="">Admin contact phone:</label>
+                            </div>
+                            <div class="col-5">
+                                <input type="tel" placeholder="(505) 6543 436" class="form-control" id="username"
+                                       name="username" autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center mt-2">
+                            <div class="col-4">
+                                <label for="username" class="">Admin contact address:</label>
+                            </div>
+                            <div class="col-5">
+                                <input type="text" placeholder="Appart 998, Derdio" class="form-control" id="username"
+                                       name="username" autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center mt-2">
+                            <div class="col-4">
+                                <label for="username" class="">Billing contact name:</label>
+                            </div>
+                            <div class="col-5">
+                                <input type="text" placeholder="Appart 998, Derdio" class="form-control" id="username"
+                                       name="username" autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center mt-2">
+                            <div class="col-4">
+                                <label for="username" class="">Billing contact email:</label>
+                            </div>
+                            <div class="col-5">
+                                <input type="email" placeholder="billing@billing.com" class="form-control" id="username"
+                                       name="username" autocomplete="new-password">
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center mt-2">
+                            <div class="col-4">
+                                <label for="username" class="">Billing contact phone:</label>
+                            </div>
+                            <div class="col-5">
+                                <input type="tel" placeholder="(505) 6543 436" class="form-control" id="username"
+                                       name="username" autocomplete="new-password">
+                            </div>
+                        </div>
+
+                         <div class="row align-items-center mt-2">
+                            <div class="col-4">
+                                <label for="username" class="">Billing contact address:</label>
+                            </div>
+                            <div class="col-5">
+                                <input type="text" placeholder="Appart 998, Derdio" class="form-control" id="username"
+                                       name="username" autocomplete="new-password">
+                            </div>
+                        </div>
+
+
+                        <div class="row mt-3">
+                            <div class="col-4">
+
+                            </div>
+                            <div class="col-5 d-grid">
+                                <button class="btn btn-dark" style="background: #0277bd; border: none">Sign Up</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+{% endblock %}
